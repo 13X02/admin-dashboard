@@ -79,13 +79,93 @@ body{
 .sidebar{
     grid-area: sidebar;
     background-color: aquamarine;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 2fr 2fr;
+    padding: 30px;
+}
+.sidebar ul{
+    padding: 0;
 }
 .article{
     grid-area: article;
     background-color:azure;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    gap: 10px;
 }
 .dp img{
     width: 50px;
     height: auto;
     border-radius: 50%;
+}
+.db-main ,ul li{
+    padding: 8px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight:500;
+}
+.article h1{
+    font-size: 1em;
+}
+.article h2{
+    font-size: .7em;
+}
+.tre-twe{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    gap: 10px;
+    padding: 0;
+}
+
+.tweets{
+    background-color: antiquewhite;
+    height: 200px;
+    border-radius: 8%;
+    padding: 10px;
+    border-left: 10px solid wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.inter{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.news{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.announ , .tre{
+    height: 300px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+}
+.tre{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.tre-co img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.tre-co{
+    font-weight: bold;
+    display: flex;
+    font-size: 1.3em;
+    align-items: center;
+    gap: 10px;
 }
